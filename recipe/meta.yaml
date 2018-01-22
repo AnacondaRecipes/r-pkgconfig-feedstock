@@ -10,8 +10,8 @@ package:
 source:
   fn: pkgconfig_{{ version }}.tar.gz
   url:
-    - https://cran.r-project.org/src/contrib/pkgconfig_{{ version }}.tar.gz
-    - https://cran.r-project.org/src/contrib/Archive/pkgconfig/pkgconfig_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/pkgconfig_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/Archive/pkgconfig/pkgconfig_{{ version }}.tar.gz
   sha256: ab02b2a4b639ba94dcba882a059fe9cddae5498a4309841f764b62ec46ba5a40
 
 

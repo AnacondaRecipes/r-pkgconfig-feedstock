@@ -14,16 +14,10 @@ source:
     - {{ cran_mirror }}/src/contrib/Archive/pkgconfig/pkgconfig_{{ version }}.tar.gz
   sha256: ab02b2a4b639ba94dcba882a059fe9cddae5498a4309841f764b62ec46ba5a40
 
-
-  # patches:
-   # List any patch files here
-   # - fix.patch
-
 build:
   merge_build_host: True  # [win]
   # If this is a new build for the same version, increment the build number.
   number: 0
-
 
   # This is required to make R link correctly on Linux.
   rpaths:

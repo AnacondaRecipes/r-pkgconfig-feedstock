@@ -8,7 +8,6 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-  fn: pkgconfig_{{ version }}.tar.gz
   url:
     - {{ cran_mirror }}/src/contrib/pkgconfig_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/pkgconfig/pkgconfig_{{ version }}.tar.gz
@@ -27,6 +26,7 @@ build:
 # Suggests: covr, testthat, disposables (>= 1.0.3)
 requirements:
   build:
+    - {{posix}}zip               # [win]
 
   host:
     - r-base
